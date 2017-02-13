@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y \
   python-dev \
   python-numpy \
   python-setuptools \
+  python-pip \
   wget
 
 # Install jupyter notebook
