@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
   wget
 
 # Install jupyter notebook
-pip install jupyter
+RUN pip install jupyter
 
 # Clone MXNet repo and move into it
 RUN cd /root && git clone --recursive https://github.com/dmlc/mxnet && cd mxnet && \
