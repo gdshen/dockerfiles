@@ -15,7 +15,8 @@ RUN cd ~/torch && \
     bash install-deps-without-sudo
 
 # Install torch7
-RUN sed -i 's/read input/input="yes"/g' install.sh && \
+RUN cd ~/torch && \
+    sed -i 's/read input/input="yes"/g' install.sh && \
     bash install.sh
 
 WORKDIR /root
